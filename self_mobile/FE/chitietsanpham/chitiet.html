@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../chitietsanpham/chitietsanpham.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/jquery/BE/home.js"></script>
+    <script src="/jquery/BE/account.js"></script>
+    <script src="/js/data/product.js"></script>
+    <title>chi tiết sản phẩm</title>
+</head>
+<body>
+    <header>
+        <a href="../home/home.html"><img src="../home/img/mobileshoplogoregistered.jpg" alt="" width="30%" ></a>
+        <div class="menu">
+            <nav>
+                <ul class="menu-left">
+                    <li><a href="../home/home.html">Trang chủ</a></li>
+                    <li><a href="../promo/promo.html">Khuyến mãi</a></li>
+                    <li><a href="../phone/phone.html">Điện thoại</a></li>
+                    <li><a href="../news/news.html">Tin tức</a> </li>
+                    <li class="history"><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a> </li>
+                    <li><a href="../contact/contact.html">Liên hệ</a></li>
+                    <li class="search">
+                        <input type="text"placeholder="bạn muốn mua gì ?">
+                        <img src="../home/img/search.png" alt="">
+                    </li>
+                </ul>
+                <ul class="menu-right">
+                    <li id="cart" class="icon"><a href="../cart/cart.html"><img src="../home/img/cart-empty.png" alt=""></a></li>
+                    <li class="user">
+                        <img src="../home/img/icons8-user-100.png" alt="">
+                        <ul class="child-user" >
+                            <li id="login"><a href="../account/login_page/login.html">Đăng nhập</a></li>
+                            <div id="accmenu">
+                                <li><a href="../accountdetail/accountdetail.html">Thông tin tài khoản</a></li>
+                                <li><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a></li>
+                                <li id="logout"><a href="/FE/account/login_page/login.html">Đăng Xuất</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="row mt-5">
+                    <h4 class="ml-5" id="product"></h4>
+                </div>
+                <div class="row" id="imgs">
+                    <img><br>
+                </div>
+                <div class="row mt-3">
+                    <h5 class="ml-5">Giá:<p id="cost"></p></h5>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                <div class="row mt-5">
+                    <h5>Mô tả</h5>
+                </div>
+                <div class="row">
+                    <p id="comp"></p>
+                </div>
+                <div class="row">
+                    
+                    <p id="promo"></p>
+                </div>
+                <div class="row">
+                    <p id="numRate"></p>
+                </div>
+                <div class="row">
+                    <button id="add" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <section class="table table-responsive">
+                    <h2 class="text-center mt-4">Thông số kỹ thuật</h2>
+                    <table class="table table-striped mt-2">
+                            <tr>
+                                <td>Màn Hình</td>
+                                <td id="scr"></td>
+                            </tr>
+                            <tr>
+                                <td>Camera trước</td>
+                                <td id="Fcam"></td>
+                            </tr>
+                            <tr>
+                                <td>Camera sau</td>
+                                <td id="Bcam"></td>
+                            </tr>
+                            <tr>
+                                <td>Hệ điều hành</td>
+                                <td id="os"></td>
+                            </tr>
+                            <tr>
+                                <td>CPU</td>
+                                <td id="cpu"></td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td id="ram"></td>
+                            </tr>
+                            <tr>
+                                <td>ROM</td>
+                                <td id="rom"></td>
+                            </tr>
+                            <tr>
+                                <td>Thẻ nhớ</td>
+                                <td id="mem"></td>
+                            </tr>
+                            <tr>
+                                <td>Dung lượng pin</td>
+                                <td id="pin"></td>
+                            </tr>
+                     </table>
+                </section>
+            </div>
+        </div>
+        <h4 class="mt-4">Bình luận</h4>
+        <div class="commentInput row">
+            <div class="col-xs-7">
+                <textarea name="" id="cmt" cols="90" placeholder="Hãy viết gì đó tại đây..."></textarea>
+            </div>
+            <div class="col-xs-5">
+                <button id="btn-cmt" class="btn btn-outline-secondary btn-lg ml-3 mt-1">Đăng</button>
+            </div>
+        </div>
+        <div class="comments">
+            
+        </div>
+        <footer></footer>
+    </div>
+    <div class="modal fade" role="dialog" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Sản phẩm</h1>
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div id="phone" class="col-md-6">
+                           
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="row">
+                                <p id="npro"></p>
+                            </div>
+                            <div class="row">
+                                <p id="cpro"></p>
+                            </div>
+                            <div class="row">
+                                <p id="rampro"></p>
+                            </div>
+                            <div class="row">
+                                <p id="rompro"></p>
+                            </div>
+                            <div class="row">
+                                Số lượng: 
+                              <input type="number" name="" id="display" min="1" value=1>
+                              <button id="plus" class=" btn btn-outline-secondary ml-1">+</button>
+                              <button id="subtract" class=" btn btn-outline-secondary ml-2">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="add-cart" class="btn btn-outline-success" id="btnSave">thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/jquery/BE/chitiet.js"></script>
+    <script>
+        active_login()
+    </script>
+</body>
+</html>

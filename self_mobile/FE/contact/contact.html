@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../contact/contact.css">
+    <script src="/jquery/jquery-3.5.0.min.js"></script>
+    <script src="/jquery/BE/chitiet.js"></script>
+    <script src="/jquery/BE/home.js"></script>
+    <script src="/js/data/product.js"></script>
+    <script src="/jquery/BE/account.js"></script>
+    <title>Liên Hệ</title>
+</head>
+<body>
+    <header>
+        <a href="../home/home.html"><img src="../home/img/mobileshoplogoregistered.jpg" alt="" width="30%" ></a>
+        <div class="menu">
+            <nav>
+                <ul class="menu-left">
+                    <li><a href="../home/home.html">Trang chủ</a></li>
+                    <li><a href="../promo/promo.html">Khuyến mãi</a></li>
+                    <li><a href="../phone/phone.html">Điện thoại</a></li>
+                    <li><a href="../news/news.html">Tin tức</a> </li>
+                    <li class="history"><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a> </li>
+                    <li><a href="../contact/contact.html">Liên hệ</a></li>
+                    <li class="search">
+                        <input id="searchHome" type="text"placeholder="bạn muốn mua gì ?">
+                        <img id="search_btnHome" src="../home/img/search.png" alt="" >
+                    </li>
+                </ul>
+                <ul class="menu-right">
+                    <li id="cart" class="icon"><a href="../cart/cart.html"><img src="../home/img/cart-empty.png" alt=""></a></li>
+                    <li class="user">
+                        <img src="../home/img/icons8-user-100.png" alt="">
+                        <ul class="child-user" >
+                            <li id="login"><a href="../account/login_page/login.html">Đăng nhập</a></li>
+                            <div id="accmenu">
+                                <li><a href="../accountdetail/accountdetail.html">Thông tin tài khoản</a></li>
+                                <li><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a></li>
+                                <li id="logout"><a href="/FE/account/login_page/login.html">Đăng Xuất</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    <section style="min-height: 85vh;margin-top: 150px;">
+        <section style="min-height: 85vh">
+            <div class="body-lienhe">
+                <div class="lienhe-header">Liên hệ</div>
+                <div class="lienhe-info">
+                    <div class="info-left">
+                        <p><h2 style="color: gray"> CÔNG TY CỔ PHẦN 2T- GROUP </h2><br />
+                            <b>Địa chỉ:</b>207/19/7Đường, Đ. Bạch Đằng, Phường 15, Bình Thạnh, Thành phố Hồ Chí Minh<br /><br />
+                            <b>Telephone:</b> 0397961884<br /><br />
+                            <b>Hotline:</b> 0343232660 - CSKH: 0397961884<br /><br />
+                            <b>Website:</b> <a href="https://www.facebook.com/tri.max.988">Facebook</a> <br /><br />
+                            <b>E-mail:</b> 2TTeam@gmail.com<br /><br />
+                            <b>Mã số thuế:</b> 01 02 03 04 05<br /><br />
+                            <b>Tài khoản ngân hàng :</b><br /><br />
+                            <b>Số TK:</b> 7411205177767 <br /><br />
+                            <b>Tại Ngân hàng:</b> Agribank Chi nhánh Trà Vinh<br /><br /><br /><br />
+                            <b>Quý khách có thể gửi liên hệ tới chúng tôi bằng cách hoàn tất biểu mẫu dưới đây. Chúng tôi
+                                sẽ trả lời thư của quý khách, xin vui lòng khai báo đầy đủ. Hân hạnh phục vụ và chân thành
+                                cảm ơn sự quan tâm, đóng góp ý kiến đến MobileShop</b>
+                        </p>
+                    </div>
+                    <div class="info-right">
+                        <iframe 
+                        width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=207/19/7%C4%90%C6%B0%E1%BB%9Dng,%20%C4%90.%20B%E1%BA%A1ch%20%C4%90%E1%BA%B1ng,%20Ph%C6%B0%E1%BB%9Dng%2015,%20B%C3%ACnh%20Th%E1%BA%A1nh,%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a>
+                        </iframe>
+                        <br />
+                    </div>
+                </div>
+                <div class="lienhe-info">
+    
+                    <div class="guithongtin">
+                        <p style="font-size: 22px; color: gray">Gửi thông tin liên lạc cho chúng tôi: </p>
+                        <hr />
+                        <form name="formlh" onsubmit="return notice()">
+                            <table cellspacing="10px">
+                                <tr>
+                                    <td>Họ và tên</td>
+                                    <td><input type="text" name="ht" size="40" maxlength="40" placeholder="Họ tên"
+                                            autocomplete="off" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Điện thoại liên hệ</td>
+                                    <td><input type="text" name="sdt" size="40" maxlength="11" minlength="10" placeholder="Điện thoại"
+                                            required></td>
+                                </tr>
+                                <tr>
+                                    <td>Địa chỉ Email</td>
+                                    <td><input type="email" name="em" size="40" placeholder="Email" autocomplete="off"
+                                            required></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiêu đề</td>
+                                    <td><input type="text" name="tde" size="40" maxlength="100" placeholder="Tiêu đề"
+                                            required>
+                                </tr>
+                                <tr>
+                                    <td>Nội dung</td>
+                                    <td><textarea name="nd" rows="5" cols="44" maxlength="500" wrap="physical"
+                                            placeholder="Nội dung liên hệ" required></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><button type="submit">Gửi thông tin liên hệ</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="thongtinnhom">
+                        <p style="font-size: 22px; color: gray">Thông tin thành viên nhóm: </p>
+                        <hr />
+                        <table>
+                            <tr>
+                                <th>Họ tên</th>
+                                <th>MSSV</th>
+                                <th>Giới tính</th>
+                            </tr>
+                            <script>
+                                var thongtin = [
+                                    ["Nguyễn Hữu Trí", "21041461", "Nam"],
+                                    ["Nguyễn Xuân Thành", "21075581", "Nam"],
+                                ]
+                                for (var i = 0; i < thongtin.length; i++) {
+                                    document.write(
+                                        `
+                                        <tr>
+                                            <td>` +
+                                        thongtin[i][0] + `</td>
+                                            <td>` +
+                                        thongtin[i][1] + `</td>
+                                            <td>` +
+                                        thongtin[i][2] + `</td>
+                                        </tr>
+                                    `
+                                    )
+                                }
+                            </script>
+                        </table>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &copy by 2023 - phát triển bởi 2T team</p>
+        </footer>
+        <script>
+            active_login()
+            function notice(){
+                alert(`Cảm ơn bạn đã đóng góp!!
+Dữ liệu đã dược gửi đi
+chúng tôi sẽ sớm trả lời bạn!!`)
+            }
+        </script>     
+</body>
+</html>

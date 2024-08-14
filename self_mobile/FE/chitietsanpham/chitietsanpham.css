@@ -1,0 +1,146 @@
+header{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position:sticky;
+    z-index: 1;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+    position:static;
+    z-index: 1;
+
+}
+nav{
+    display: flex;
+}
+nav .menu-left{
+    display:inline-flex;
+    
+    list-style: none;
+    position:absolute;
+}
+.menu-left a{
+    color: white;
+}
+nav ul li{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.child-user {
+    display: contents;
+    list-style: none;
+    justify-content: start;
+    font-size: 30px;
+    display: none;
+    z-index: 1;
+}
+.child-user li{
+    text-align: left;
+    margin-left: -240px;
+}
+.child-user li a{
+    text-decoration: none;
+    color: black;
+
+}
+.user:hover .child-user{
+    display: block;
+  
+
+}
+.child-user li:hover{
+    background-color: gray;
+    border-bottom: 4px solid;
+}
+.child-user li a:hover{
+    color: wheat;
+}
+nav .menu-right{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 600px ;
+}
+nav ul .icon img{
+    width: 30px;
+    margin-left: 700px;
+    margin-bottom: 10px;
+    filter: invert(100%) sepia(3%) saturate(327%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+nav ul .user img{
+    width: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    filter: invert(100%) sepia(3%) saturate(327%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+nav .menu-left li input{
+    width: 400px;    
+    height: 30px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-left: 50px;
+    
+}
+nav ul .search img{
+    width: 20px;
+    margin-bottom: 10px;
+    filter: invert(100%) sepia(3%) saturate(327%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 20px;
+}
+.commentInput textarea{
+    margin-left: 400px;
+}
+.comments{
+    background-color:rgb(216, 230, 229);
+    width: 100%;
+    height: 190px;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+.comments::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+.content{
+    margin-top: -30px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+}
+footer{
+    position: relative;
+    height: 60px;
+    top: 20px;
+    color: white;
+    text-align: center;
+    background-color:gray;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+input[type=number]{
+    border-radius: 40px;
+    width: 70px;
+    margin-left: 20px;
+}
+#add-cart{
+    margin-right: 150px;
+}
+#cart::after{
+    display: contents;
+    content: " ";
+    background-color: red;
+    width: 200px;
+}

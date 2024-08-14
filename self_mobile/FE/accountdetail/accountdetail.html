@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../news/news.css">
+    <link rel="stylesheet" href="../accountdetail/acc.css">
+    <script src="/jquery/jquery-3.5.0.min.js"></script>
+    <script src="/js/data/product.js"></script>
+    <script src="/jquery/BE/home.js"></script>
+    <script src="/jquery/BE/chitiet.js"></script>
+    <script src="/jquery/BE/account.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="../home/home.html"><img src="../home/img/mobileshoplogoregistered.jpg" alt="" width="30%" ></a>
+        <div class="menu">
+            <nav>
+                <ul class="menu-left">
+                    <li><a href="../home/home.html">Trang chủ</a></li>
+                    <li><a href="../promo/promo.html">Khuyến mãi</a></li>
+                    <li><a href="../phone/phone.html">Điện thoại</a></li>
+                    <li><a href="../news/news.html">Tin tức</a> </li>
+                    <li class="history"><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a> </li>
+                    <li><a href="../contact/contact.html">Liên hệ</a></li>
+                    <li class="search">
+                        <input id="searchHome" type="text"placeholder="bạn muốn mua gì ?">
+                        <img id="search_btnHome" src="../home/img/search.png" alt="" >
+                    </li>
+                </ul>
+                <ul class="menu-right">
+                    <li id="cart" class="icon"><a href="../cart/cart.html"><img src="../home/img/cart-empty.png" alt=""></a></li>
+                    <li class="user">
+                        <img src="../home/img/icons8-user-100.png" alt="">
+                        <ul class="child-user" >
+                            <li id="login"><a href="../account/login_page/login.html">Đăng nhập</a></li>
+                            <div id="accmenu">
+                                <li><a href="../accountdetail/accountdetail.html">Thông tin tài khoản</a></li>
+                                <li><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a></li>
+                                <li id="logout"><a href="/FE/account/login_page/login.html">Đăng Xuất</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <div class="container">
+        <img id="avatar" src="../home/img/icons8-user-100.png" alt="">
+        <p class="name"></p>
+        <p class="email">Email: trimax2k3@gmail.com</p>
+        <p class="numOrder"></p>
+    </div>
+    <footer>
+        <p>Copyright &copy by 2023 - phát triển bởi 2T team</p>
+    </footer> 
+    <script>
+        active_login()
+        $('.name').html(getProduct('curent_user').name)
+        $('.email').html('Email: '+getProduct('curent_user').email)
+        var count = 0;
+        for(var i = 0;i<getProduct('inforCus').length;i++){
+            if(getProduct('inforCus').fulname==getProduct('curent_user').name)
+                count+=1;
+        }
+        $('.numOrder').html('Số đơn hàng đã mua: '+count)
+    </script>
+</body>
+</html>

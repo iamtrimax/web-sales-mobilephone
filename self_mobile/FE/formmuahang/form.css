@@ -1,0 +1,11 @@
+header{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: static;
+    z-index: 1;
+}
+button{
+    width: 850px;
+    margin-left: 60px;
+}

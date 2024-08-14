@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FE/account/signup_page/style.css">
+    <script src="/jquery/jquery-3.5.0.min.js"></script>
+    <title>Quên mật khẩu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tạo lại mật khẩu</h1>
+        <form id="sign_up" action="" method ="post" class="input_area">
+                <input id="name" class="name" type="text" placeholder="Nhập username" required>
+            
+            <input type="email" name="email_user" id="email_user" placeholder="Nhập email của user" required><br>
+            <input type="password" name="pw" id="pw" placeholder="Nhập mật khẩu" required><br>
+            <input type="password" name="pw" id="pw1" placeholder="Nhập lại mật khẩu" pattern="" required><br>
+            <button id = "dy" type="submit"class="dk">Đồng ký</button>
+        </form>
+
+    </div>
+    <script src="/jquery/BE/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="../cart/cart.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/jquery/BE/home.js"></script>
+    <script src="/jquery/BE/account.js"></script>
+    <script src="/js/data/product.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <header>
+        <a href="../home/home.html"><img src="../home/img/mobileshoplogoregistered.jpg" alt="" width="30%" ></a>
+        <div class="menu">
+            <nav>
+                <ul class="menu-left">
+                    <li><a href="../home/home.html">Trang chủ</a></li>
+                    <li><a href="../promo/promo.html">Khuyến mãi</a></li>
+                    <li><a href="../phone/phone.html">Điện thoại</a></li>
+                    <li><a href="../news/news.html">Tin tức</a> </li>
+                    <li class="history"><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a> </li>
+                    <li><a href="../contact/contact.html">Liên hệ</a></li>
+                    <li class="search">
+                        <input type="text"placeholder="bạn muốn mua gì ?">
+                        <img src="../home/img/search.png" alt="">
+                    </li>
+                </ul>
+                <ul class="menu-right">
+                    <li id="cart" class="icon"><a href="../cart/cart.html"><img src="../home/img/cart-empty.png" alt=""></a></li>
+                    <li class="user">
+                        <img src="../home/img/icons8-user-100.png" alt="">
+                        <ul class="child-user" >
+                            <li id="login"><a href="../account/login_page/login.html">Đăng nhập</a></li>
+                            <div id="accmenu">
+                                <li><a href="../accountdetail/accountdetail.html">Thông tin tài khoản</a></li>
+                                <li><a href="../historyBuy/historyBuy.html">Lịch sử mua hàng</a></li>
+                                <li id="logout"><a href="/FE/account/login_page/login.html">Đăng Xuất</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center text-info">Giỏ hàng</h2>
+            </div>
+        </div>
+        <div class="row mt-5  border-secondary border-bottom">
+            <div class="col-md-1">
+                Chọn
+            </div>
+            <div class="col-md-3">
+                Sản phẩm
+            </div>
+            <div class="col-md-3">
+                Đơn giá
+            </div>
+            <div class="col-md-3">
+                Số lượng
+            </div>
+            <div class="col-md-2">
+                thành tiền
+            </div>
+        </div>
+        <div class="card">
+            
+        </div>        
+        <footer>
+            <div class="row">
+                <button id="buy" class="btn-lg btn-outline-success mt-5 btn-block">Mua</button>
+            </div>
+        </footer>
+   </div>
+   <script src="/jquery/BE/cart.js"></script>
+   <script>active_login()</script>
+</body>
+</html>
